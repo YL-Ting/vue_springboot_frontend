@@ -8,3 +8,13 @@
 - Buefy dosen't work : Buefy only support Vue 2.6+ , should change project version to Vue 2.6+
 
     [Does Bulma Buefy support VUE 3?](https://stackoverflow.com/questions/71879603/does-bulma-buefy-support-vue-3)
+- Project clone from URL "yarn serve" get error
+    ```
+    /bin/sh: vue-cli-service: command not found
+    error Command failed with exit code 127.
+    info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+    ```
+    solution: rebuild the project.(because git will not record the change of "node_modules")
+    ```
+    yarn install
+    ```
